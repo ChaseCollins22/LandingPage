@@ -15,7 +15,9 @@ h2 {
 
 .header-intro-container {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  align-content: stretch;
+  background-color: #1F2937;
 }
 
 .header-container,
@@ -28,6 +30,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0 20px 20px;
 }
 
 .header-links {
@@ -37,11 +40,13 @@ h2 {
 }
 
 .header-links p {
-  padding: 0 12px;
+  margin: 0 12px
 }
 
 .intro-container {
   display: flex;
+  padding: 20px;
+  justify-content: space-around;
 }
 
 .intro-container h1 {
@@ -52,4 +57,17 @@ h2 {
 .intro-text-container {
   display: flex;
   flex-flow: column wrap;
+  max-width: 325px;
+}
+
+#headshot {
+  width: 100%;
+  height: auto;
+}
+
+.headshot-container {
+  display: flex;
+}
+.intro-text-container h1 {
+  margin-bottom: 0;
 }
